@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="shortcut icon" href="public/favicon.ico"/>
+    <link rel="stylesheet" href="index.css">
+    <title>Yorkshire Dales Park | GabbyKC</title>
+</head>
+<body>
+<header class="header">
+    <div class="header__wrapper">
+        <a href="#" class="header__logo">
+            <img src="public/images/logo.svg" alt="Yorkshire Dales National Park">
+        </a>
+        <nav class="header__nav">
+            <ul class="header__nav__ul">
+                <li><a href="#">About</a></li>
+                <li><a href="#">How You Can Help</a></li>
+                <li><a href="#">Park Authority</a></li>
+                <li><a href="#">Planning</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <nav class="header__nav header__nav--main">
+            <ul class="header__nav__ul">
+                <li><a href="#">Places to Go</a></li>
+                <li><a href="#">Things to Do</a></li>
+                <li><a href="#">Plan Your Visit</a></li>
+                <li><a href="#">Be Inspired</a></li>
+                <li><a href="#">Explore By Map</a></li>
+            </ul>
+        </nav>
+
+        <button id="modalButton" class="header__modal__button">
+            <svg viewBox="0 0 100 80" width="30" height="30">
+                <rect width="100" height="15"></rect>
+                <rect y="30" width="100" height="15"></rect>
+                <rect y="60" width="100" height="15"></rect>
+            </svg>
+        </button>
+
+        <div id="headerModal" class="header__modal">
+            <div class="header__modal__content">
+                <span class="header__modal__close">&times;</span>
+                <ul class="header__modal__content--first">
+                    <li><a href="#">Places to Go</a></li>
+                    <li><a href="#">Things to Do</a></li>
+                    <li><a href="#">Plan Your Visit</a></li>
+                    <li><a href="#">Be Inspired</a></li>
+                    <li><a href="#">Explore By Map</a></li>
+                </ul>
+
+                <ul class="header__modal__content--second">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">How You Can Help</a></li>
+                    <li><a href="#">Park Authority</a></li>
+                    <li><a href="#">Planning</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <h1 class="header__welcome">Welcome to the Yorkshire <br> Dales Park</h1>
+    <div class="header__photo-credit">
+        <div class="header__photo-credit__icon">
+            <img src="public/images/hero-arrow.svg" alt="down arrow icon">
+        </div>
+        <p class="header__photo-credit__text">‘Flowers and plants in Feizor, Oxenber ’ Photo by Paul Harris</p>
+    </div>
+</header>
+
+
+<script src="index.js"></script>
+</body>
+</html>
