@@ -43,6 +43,7 @@ body {
     --font-reg-2: 18px;
     --font-reg-6: 22px;
     --font-med: 25px;
+    --font-medx: 30px;
     --font-large: 35px;
     --font-largest: 50px;
     --border-radius: 4px
@@ -56,6 +57,9 @@ body {
 
 .d-flex {
     display: flex;
+}
+
+.space-between {
     justify-content: space-between;
 }
 
@@ -216,8 +220,90 @@ body {
 
 .section-one__link--salmon {
     background: var(--btn-salmon);
-    padding: .75rem 1.25rem;
+    padding: .75rem 1rem;
 }
+
+.section-two {
+    background: var(--light-blue-grey);
+    padding: 3rem 0;
+}
+
+.section-two__container {
+    justify-content: flex-end;
+}
+
+.section-two__content {
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.section-two__intro {
+    margin: 2rem 0;
+    font-size: var(--font-reg-1);
+    letter-spacing: 0.68px;
+}
+
+.section-two__footprint--one {
+    position: absolute;
+    left: -30%;
+    bottom: 5%;
+}
+
+.section-two__activities {
+    list-style: none;
+    font-size: var(--font-medx);
+    letter-spacing: 0.3px;
+    margin-bottom: 2rem;
+}
+
+.section-two__activities li {
+    position: relative;
+    margin-bottom: .5rem;
+}
+
+.section-two__activities li:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--underline);
+    cursor: pointer;
+}
+
+.section-two__activities li:hover::before {
+    content: '';
+    position: absolute;
+    left: -12%;
+    width: 30px;
+    height: 30px;
+    background: url('public/images/arrow-right.png');
+}
+
+.section-two__all-activities {
+    background: var(--btn-salmon);
+    padding: .75rem 1rem;
+}
+
+.section-two__activity-image {
+    background: url('public/images/lambing.jpg');
+    background-size: cover;
+    flex-basis: 50%;
+    margin-left: 5%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.section-two__footprint--two {
+    position: absolute;
+    bottom: -15%;
+    left: 20%;
+}
+
+.section-two__activity-link {
+    background: var(--btn-salmon);
+    padding: .75rem 1rem;
+}
+
+
 
 
 
@@ -235,6 +321,15 @@ body {
 
     .section-one__background--first {
         margin-bottom: 2rem;
+    }
+
+    .section-two__container {
+        flex-direction: column;
+    }
+
+    .section-two__activity-image {
+        min-height: 350px;
+        margin-left: 0;
     }
 }
 
@@ -344,5 +439,9 @@ body {
 
     .section-one__intro {
         width: 80%;
+    }
+
+    .section-two__footprint--one, .section-two__footprint--two {
+        display: none;
     }
 }
