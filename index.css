@@ -207,6 +207,7 @@ body {
     font-size: var(--font-large);
     padding-bottom: 2rem;
     color: var(--white);
+    font-weight: normal;
 }
 
 .section-one__link {
@@ -320,6 +321,7 @@ body {
     font-size: var(--font-large);
     text-align: center;
     margin-bottom: 3rem;
+    font-weight: normal;
 }
 
 .section-three__carousel {
