@@ -48,15 +48,24 @@ body {
     --border-radius: 4px
 }
 
-/*!*Utilities *!*/
-/*.wrapper {*/
-/*    width: 80%;*/
-/*    margin: auto;*/
-/*}*/
+/*Utilities */
+.wrapper {
+    width: 70%;
+    margin: auto;
+}
 
-/*.d-flex {*/
-/*    display: flex;*/
-/*}*/
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-2 {
+    flex-basis: 49%;
+}
+
+.align-c {
+    text-align: center;
+}
 
 /*Styles */
 .header {
@@ -157,6 +166,58 @@ body {
     letter-spacing: 0.16px;
 }
 
+.section-one {
+    margin-bottom: 5rem;
+}
+
+.section-one__intro {
+    text-align: center;
+    letter-spacing: 0.18px;
+    font-size: var(--font-reg-2);
+    width: 55%;
+    margin: 3.4rem auto;
+}
+
+.section-one__background--first {
+    background: url('public/images/section-one-background-1.jpg');
+    background-size: cover;
+}
+
+.section-one__background--second {
+    background: url('public/images/section-one-background-2.jpg');
+    background-size: cover;
+}
+
+.section-one__small {
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    font-size: var(--font-reg-1);
+    letter-spacing: 1.19px;
+    color: var(--white);
+}
+
+.section-one__large {
+    font-size: var(--font-large);
+    padding-bottom: 2rem;
+    color: var(--white);
+}
+
+.section-one__link {
+    font-size: var(--font-reg-2);
+    display: inline-block;
+    margin-bottom: 3.4rem;
+}
+
+.section-one__link--green {
+    background: var(--underline);
+    padding: .75rem 2rem;
+}
+
+.section-one__link--salmon {
+    background: var(--btn-salmon);
+    padding: .75rem 1.25rem;
+}
+
 
 
 
@@ -166,7 +227,21 @@ body {
 
 
 /*Media Queries */
+@media (max-width: 700px) {
+    .section-one .d-flex {
+        flex-direction: column;
+    }
+
+    .section-one__background--first {
+        margin-bottom: 2rem;
+    }
+}
+
 @media (max-width: 1300px) {
+    .wrapper {
+        width: 90%;
+    }
+
     .header__logo {
         left: 0;
     }
@@ -248,7 +323,7 @@ body {
 
     .header__modal__content--second::before {
         position: absolute;
-        content: "";
+        content: '';
         height: 2px;
         width: 50%;
         top: 8%;
@@ -264,5 +339,9 @@ body {
     .header__modal__content--first a:hover, .header__modal__content--second a:hover {
         background: var(--nav-green);
         color: var(--white);
+    }
+
+    .section-one__intro {
+        width: 80%;
     }
 }
