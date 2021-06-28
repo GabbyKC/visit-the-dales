@@ -158,6 +158,8 @@ body {
     align-self: flex-end;
     margin-right: 15%;
     color: var(--white);
+    height: 88px;
+    width: 541px;
 }
 
 .header__photo-credit__icon {
@@ -278,7 +280,11 @@ body {
 
 .section-two__all-activities {
     background: var(--btn-salmon);
-    padding: .75rem 1rem;
+    height: 45px;
+    width: 234px;
+    line-height: 45px;
+    text-align: center;
+    display: inline-block;
 }
 
 .section-two__activity-image {
@@ -300,9 +306,85 @@ body {
 
 .section-two__activity-link {
     background: var(--btn-salmon);
-    padding: .75rem 1rem;
+    height: 40px;
+    width: 164px;
+    line-height: 40px;
+    text-align: center;
 }
 
+.section-three {
+    margin: 3rem auto;
+}
+
+.section-three__intro {
+    font-size: var(--font-large);
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-three__carousel {
+    position: relative;
+}
+
+.section-three__carousel::after {
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 15%;
+    background: var(--underline);
+    bottom: -2%;
+}
+
+.section-three__carousel__item {
+    height: 350px;
+    width: 250px;
+}
+
+.slick-slide {
+    margin-right: 18px;
+}
+
+.section-three__carousel button.slick-prev, button.slick-next {
+    top: 40%!important;
+}
+
+.slick-prev:before, .slick-next:before {
+    content: url('public/images/arrow-left.png') !important;
+    background: var(--btn-salmon);
+    border-radius: 50%;
+    position: absolute;
+    right: 60% !important;
+    padding: .25rem;
+}
+
+.slick-next:before {
+    content: url('public/images/arrow-right.png') !important;
+    right: -60% !important;
+}
+
+.section-three__carousel__item img {
+    width: 100%;
+}
+
+.section-three__carousel__item p {
+    font-size: var(--font-reg-6);
+    letter-spacing: 0.25px;
+    margin-top: 1rem;
+}
+
+.section-three__see-all-container {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.section-three__see-all {
+    background: var(--btn-salmon);
+    display: inline-block;
+    height: 45px;
+    width: 213px;
+    text-align: center;
+    line-height: 45px;
+}
 
 
 
@@ -442,6 +524,10 @@ body {
     }
 
     .section-two__footprint--one, .section-two__footprint--two {
+        display: none;
+    }
+
+    .section-three__carousel::after {
         display: none;
     }
 }

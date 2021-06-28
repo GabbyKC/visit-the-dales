@@ -18,3 +18,35 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+// Section Three Carousel using Slick
+$('.section-three__carousel').slick({
+    slidesToShow: 4,
+    focusOnSelect: true,
+    responsive: [
+        {
+            breakpoint: 500,
+            settings: {
+                slidesToShow: 1,
+                arrows: false,
+                dots: true
+            }
+        },
+        {
+            breakpoint: 700,
+            settings: {
+                slidesToShow: 2,
+                arrows: false,
+                dots: true
+            }
+        },
+        {
+            breakpoint: 800,
+            settings: {
+                slidesToShow: 3,
+                arrows: false,
+                dots: true
+            }
+        },
+    ]
+});
