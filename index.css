@@ -27,17 +27,18 @@ body {
 /*Variables*/
 :root {
     --white: #FFFFFF;
-    --text-colour: #1A1A1A;
-    --underline: #50CFC1;
-    --btn-salmon: #FCCBAC;
+    --green-highlight: #50CFC1;
+    --salmon: #FCCBAC;
     --blue-grey: #96A3CF;
     --light-blue-grey: #EAEDF5;
+    --green-darkest: #003D2A;
+    --green-dark: #397266;
+    --green-mid-1: #53857F;
+    --green-mid-2: #5F877B;
+    --green-light: #AACAC7;
+    --green-lightest: #E3EDEC;
     --plum: #986987;
-    --forest-green: #003D2A;
-    --mid-forest-green: #397266;
-    --logo-green: #53857F;
-    --nav-green: #AACAC7;
-    --footer-green: #5F877B;
+    --text-colour: #1A1A1A;
     --font-reg: 16px;
     --font-reg-1: 17px;
     --font-reg-2: 18px;
@@ -71,6 +72,22 @@ body {
     text-align: center;
 }
 
+.section-headings {
+    font-size: var(--font-large);
+    text-align: center;
+    margin-bottom: 5rem;
+    font-weight: normal;
+}
+
+.mb-small {
+    margin-bottom: 1rem;
+}
+
+.see-all-link-container {
+    text-align: center;
+    margin-top: 3rem;
+}
+
 /*Styles */
 .header {
     display: flex;
@@ -86,7 +103,7 @@ body {
 }
 
 .header__logo {
-    background: var(--logo-green);
+    background: var(--green-mid-1);
     display: inline-block;
     position: absolute;
     left: 15%;
@@ -105,7 +122,7 @@ body {
 }
 
 .header__nav--main {
-    background: var(--nav-green);
+    background: var(--green-light);
     font-size: var(--font-reg-2);
     letter-spacing: 0.18px;
     padding-left: 10%;
@@ -126,7 +143,7 @@ body {
 }
 
 .header__nav li:hover {
-    background: var(--nav-green);
+    background: var(--green-light);
 }
 
 .header__nav--main li {
@@ -162,13 +179,13 @@ body {
 }
 
 .header__photo-credit__icon {
-    background: var(--mid-forest-green);
+    background: var(--green-dark);
     padding: .5rem 0 0 .5rem;
 }
 
 .header__photo-credit__text {
     padding: 1.5rem 2rem;
-    background: var(--forest-green);
+    background: var(--green-darkest);
     letter-spacing: 0.16px;
 }
 
@@ -181,7 +198,7 @@ body {
     letter-spacing: 0.18px;
     font-size: var(--font-reg-2);
     width: 55%;
-    margin: 3.4rem auto;
+    margin: 3.5rem auto;
 }
 
 .section-one__background--first {
@@ -216,12 +233,12 @@ body {
 }
 
 .section-one__link--green {
-    background: var(--underline);
+    background: var(--green-highlight);
     padding: .75rem 2rem;
 }
 
 .section-one__link--salmon {
-    background: var(--btn-salmon);
+    background: var(--salmon);
     padding: .75rem 1rem;
 }
 
@@ -265,7 +282,7 @@ body {
 
 .activities__list li:hover {
     text-decoration: underline;
-    text-decoration-color: var(--underline);
+    text-decoration-color: var(--green-highlight);
     cursor: pointer;
 }
 
@@ -279,7 +296,7 @@ body {
 }
 
 .activities__view-all {
-    background: var(--btn-salmon);
+    background: var(--salmon);
     height: 45px;
     width: 234px;
     line-height: 45px;
@@ -305,7 +322,7 @@ body {
 }
 
 .activities__view-activity {
-    background: var(--btn-salmon);
+    background: var(--salmon);
     height: 40px;
     width: 164px;
     line-height: 40px;
@@ -313,14 +330,7 @@ body {
 }
 
 .section-three {
-    margin: 3rem auto;
-}
-
-.section-three__intro {
-    font-size: var(--font-large);
-    text-align: center;
-    margin-bottom: 3rem;
-    font-weight: normal;
+    margin: 5rem auto;
 }
 
 .section-three__carousel {
@@ -332,7 +342,7 @@ body {
     content: '';
     height: 3px;
     width: 15%;
-    background: var(--underline);
+    background: var(--green-highlight);
     bottom: -2%;
 }
 
@@ -351,7 +361,7 @@ body {
 
 .slick-prev:before, .slick-next:before {
     content: url('public/images/arrow-left.png') !important;
-    background: var(--btn-salmon);
+    background: var(--salmon);
     border-radius: 50%;
     position: absolute;
     right: 60% !important;
@@ -373,13 +383,8 @@ body {
     margin-top: 1rem;
 }
 
-.section-three__see-all-container {
-    text-align: center;
-    margin-top: 3rem;
-}
-
 .section-three__see-all {
-    background: var(--btn-salmon);
+    background: var(--salmon);
     display: inline-block;
     height: 45px;
     width: 213px;
@@ -410,6 +415,89 @@ body {
 
 .activities__view-all--second{
     width: 213px;
+}
+
+.section-five {
+    margin: 5rem auto;
+}
+
+.section-five__intro {
+    font-size: var(--font-reg-2);
+    text-align: center;
+}
+
+.section-five__events {
+    margin-top: 3rem;
+}
+
+.section-five__event {
+    width: 32%;
+}
+
+.section-five__event h4 {
+    font-size: var(--font-reg-6);
+    color: var(--white);
+    background: var(--green-mid-2);
+    font-weight: normal;
+    padding: 1rem 1.5rem;
+    letter-spacing: 0.22px;
+    height: 103px;
+    display: flex;
+    align-items: center;
+}
+
+.section-five__event span {
+    margin-right: 5%;
+}
+
+.section-five__event svg {
+    height: 42px;
+    width: 48px;
+}
+
+.section-five__event__content {
+    font-size: var(--font-reg-2);
+    padding: 2rem 1.5rem;
+    background: var(--green-lightest);
+    letter-spacing: 0.18px;
+}
+
+.section-five__event-end {
+    margin: .5rem 0 1.5rem 0;
+}
+
+.section-five__event-more {
+    font-size: var(--font-reg);
+    position: relative;
+    letter-spacing: 0.64px;
+}
+
+.section-five__event-more::after {
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 100%;
+    background: var(--green-highlight);
+    bottom: -40%;
+    left: 0;
+}
+
+.section-five__event-more:hover::before {
+    content: '';
+    position: absolute;
+    right: -25%;
+    width: 30px;
+    height: 30px;
+    background: url('public/images/arrow-right.png');
+}
+
+.section-five__events__see-all {
+    background: var(--salmon);
+    height: 45px;
+    width: 213px;
+    line-height: 45px;
+    text-align: center;
+    display: inline-block;
 }
 
 
@@ -473,7 +561,7 @@ body {
     }
 
     .header__modal__button svg {
-        fill: var(--forest-green);
+        fill: var(--green-darkest);
     }
 
     .header__modal {
@@ -534,7 +622,7 @@ body {
         width: 50%;
         top: 8%;
         right: 25%;
-        background: var(--forest-green);
+        background: var(--green-darkest);
     }
 
     .header__modal__content--first a, .header__modal__content--second a {
@@ -543,7 +631,7 @@ body {
     }
 
     .header__modal__content--first a:hover, .header__modal__content--second a:hover {
-        background: var(--nav-green);
+        background: var(--green-light);
         color: var(--white);
     }
 
@@ -562,5 +650,15 @@ body {
 
     .section-three__carousel::after {
         display: none;
+    }
+
+    .section-five__events {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .section-five__event {
+        width: auto;
+        margin-bottom: 2rem;
     }
 }
