@@ -492,6 +492,10 @@ body {
     display: inline-block;
 }
 
+.section-six {
+    margin-bottom: 4rem;
+}
+
 .section-six__content {
     margin-top: 3rem;
     font-size: var(--font-reg-6);
@@ -529,6 +533,59 @@ body {
 
 .section-six__content__fourth {
     background: var(--green-yellow);
+}
+
+.footer {
+    background: var(--green-mid-2);
+}
+
+.footer a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.footer__container {
+    padding: 5.8rem 14em 5.8rem 14rem;
+    color: var(--white);
+    display: flex;
+}
+
+.footer__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+    padding-top: 1rem;
+}
+
+.footer__content--first {
+    margin-right: 8%;
+}
+
+.footer__content--second {
+    margin-right: 15%;
+}
+
+.footer__logos {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas: 'europarc viewranger'
+                        'nationalparks investors';
+    grid-row-gap: 1rem;
+    grid-column-gap: 3rem;
+}
+
+.footer__logos__ranger {
+    align-self: center;
+    justify-self: center;
+}
+
+.footer__logos__national {
+    align-self: end;
+}
+
+.footer__logos__investors {
+    align-self: end;
 }
 
 /*Media Queries */
@@ -692,5 +749,25 @@ body {
 
     .section-six__content div {
         margin-bottom: 2rem;
+    }
+
+    .footer__container {
+        padding: 2rem 0;
+        width: 70%;
+        margin: auto;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .footer__content--first {
+        margin-right: 0;
+    }
+
+    .footer__content--second {
+        margin-right: 0;
+    }
+
+    .footer__logos {
+        display: none;
     }
 }
