@@ -16,6 +16,10 @@ a {
     color: var(--text-colour);
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Syntax LT Std Roman', sans-serif;
     color: var(--text-colour);
@@ -626,6 +630,10 @@ body {
     .activities__image {
         min-height: 350px;
         margin-left: 0;
+    }
+
+    .activities__list li:hover::before {
+        content: unset;
     }
 }
 
