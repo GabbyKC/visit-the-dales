@@ -1,7 +1,6 @@
-// Header Modal
-let modal = document.getElementById("headerModal");
-let btn = document.getElementById("modalButton");
-let span = document.getElementsByClassName("header__modal__close")[0];
+const modal = document.getElementById("headerModal");
+const btn = document.getElementById("modalButton");
+const span = document.getElementsByClassName("header__modal__close")[0];
 // When the user clicks the button, open the modal
 btn.onclick = function() {
     modal.style.display = "block";

@@ -1,7 +1,7 @@
 /*Font */
 @font-face {
     font-family: 'Syntax LT Std Roman';
-    src: url('public/fonts/SyntaxLTStd-Roman.otf');
+    src: url('../fonts/SyntaxLTStd-Roman.otf');
 }
 
 /*Resets*/
@@ -121,7 +121,7 @@ body {
     flex-direction: column;
     height: 745px;
     justify-content: space-between;
-    background: url('public/images/background-large.png');
+    background: url('../images/background-large.png');
     background-size: cover;
 }
 
@@ -229,12 +229,12 @@ body {
 }
 
 .section-one__background--first {
-    background: url('public/images/section-one-background-1.jpg');
+    background: url('../images/section-one-background-1.jpg');
     background-size: cover;
 }
 
 .section-one__background--second {
-    background: url('public/images/section-one-background-2.jpg');
+    background: url('../images/section-one-background-2.jpg');
     background-size: cover;
 }
 
@@ -319,7 +319,7 @@ body {
     left: -12%;
     width: 30px;
     height: 30px;
-    background: url('public/images/arrow-right.png');
+    background: url('../images/arrow-right.png');
 }
 
 .activities__view-all {
@@ -327,7 +327,7 @@ body {
 }
 
 .activities__image {
-    background: url('public/images/lambing.jpg');
+    background: url('../images/lambing.jpg');
     background-size: cover;
     flex-basis: 50%;
     margin-left: 5%;
@@ -374,7 +374,7 @@ body {
 }
 
 .slick-prev:before, .slick-next:before {
-    content: url('public/images/arrow-left.png') !important;
+    content: url('../images/arrow-left.png') !important;
     background: var(--salmon);
     border-radius: 50%;
     position: absolute;
@@ -383,7 +383,7 @@ body {
 }
 
 .slick-next:before {
-    content: url('public/images/arrow-right.png') !important;
+    content: url('../images/arrow-right.png') !important;
     right: -60% !important;
 }
 
@@ -408,7 +408,7 @@ body {
 }
 
 .activities__image--second {
-    background: url('public/images/children.jpg');
+    background: url('../images/children.jpg');
     background-size: cover;
 }
 
@@ -484,7 +484,7 @@ body {
     right: -25%;
     width: 30px;
     height: 30px;
-    background: url('public/images/arrow-right.png');
+    background: url('../images/arrow-right.png');
 }
 
 .section-five__events__see-all {
