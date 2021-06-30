@@ -515,6 +515,12 @@ body {
     flex-direction: column;
 }
 
+.section-six__content a {
+    display: block;
+    text-align: center;
+    color: white;
+}
+
 .section-six__content p {
     margin-top: 1.8rem;
 }
