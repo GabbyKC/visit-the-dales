@@ -29,7 +29,8 @@ $('.section-three__carousel').slick({
             settings: {
                 slidesToShow: 1,
                 arrows: false,
-                dots: true
+                dots: true,
+                speed: 100
             }
         },
         {
