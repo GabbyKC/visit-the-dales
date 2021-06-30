@@ -627,6 +627,11 @@ body {
         flex-direction: column;
     }
 
+    .activities__list {
+        padding-left: 1rem;
+        list-style-type: disc;
+    }
+
     .activities__image {
         min-height: 350px;
         margin-left: 0;
@@ -747,6 +752,10 @@ body {
 
     .section-two__footprint--one, .section-two__footprint--two, .section-four__footprint--one, .section-four__footprint--two {
         display: none;
+    }
+
+    .activities__list--second {
+        width: 100%;
     }
 
     .activities__image, .activities__image--second {
